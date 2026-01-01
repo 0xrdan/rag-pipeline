@@ -350,6 +350,26 @@ const result = await pipeline.query({
 
 ---
 
+## Part of the Context Continuity Stack
+
+This repo is one layer in a broader approach to **context continuity** — giving AI systems the right context at the right time.
+
+| Layer | Role | This Repo |
+|-------|------|-----------|
+| Intra-session | Short-term memory | — |
+| Document-scoped | Injected content | — |
+| **Retrieved** | **Long-term semantic memory** | **rag-pipeline** |
+| Progressive | Staged responses | — |
+
+RAG provides the **persistent memory layer** — documents indexed once, retrieved on demand. Combined with session caching and document injection, it creates seamless context continuity for users.
+
+**Related repos:**
+- [chatbot-widget](https://github.com/0xrdan/chatbot-widget) — Session cache, Research Mode, conversation export
+- [mcp-rag-server](https://github.com/0xrdan/mcp-rag-server) — This pipeline as MCP tools
+- [ai-orchestrator](https://github.com/0xrdan/ai-orchestrator) — Complexity-based model routing
+
+---
+
 ## Contributing
 
 Contributions welcome! Please:
