@@ -1,0 +1,63 @@
+{
+  "name": "rag-pipeline",
+  "version": "1.0.0",
+  "description": "Production-ready RAG pipeline with ChromaDB, OpenAI embeddings, and hybrid search",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rag",
+    "retrieval-augmented-generation",
+    "vector-database",
+    "chromadb",
+    "embeddings",
+    "openai",
+    "semantic-search",
+    "chunking",
+    "llm",
+    "ai"
+  ],
+  "author": "Dan Monteiro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xrdan/rag-pipeline.git"
+  },
+  "homepage": "https://github.com/0xrdan/rag-pipeline#readme",
+  "bugs": {
+    "url": "https://github.com/0xrdan/rag-pipeline/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chromadb": "^1.9.0",
+    "openai": "^4.70.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "chromadb": ">=1.8.0",
+    "openai": ">=4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "chromadb": {
+      "optional": false
+    },
+    "openai": {
+      "optional": false
+    }
+  }
+}
